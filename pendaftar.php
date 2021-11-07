@@ -1,8 +1,9 @@
 <?php
 include 'header.php';
 include 'koneksi.php';
-//$username = $_SESSION['username'];
-$username = $_GET['id'];
+
+session_start();
+$username = $_SESSION['username'];
 
 $result = mysqli_query($connect, "SELECT * FROM daftar WHERE dfr_no = '$username'");
 $d = mysqli_fetch_array($result,MYSQLI_ASSOC);

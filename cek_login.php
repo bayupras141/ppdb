@@ -37,6 +37,7 @@ if($cek > 0){
 		// buat session login dan username
 		$_SESSION['username'] = $username;
 		$_SESSION['nama'] = $data['dfr_nama'];
+		// var_dump($username);
 		// alihkan ke halaman dashboard peserta
 		header("location:pendaftar.php");
 
