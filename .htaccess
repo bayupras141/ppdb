@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteBase /
+AddHandler application/x-httpd-php .php
+<Files action1>
+SetHandler application/x-httpd-php
+</Files>
