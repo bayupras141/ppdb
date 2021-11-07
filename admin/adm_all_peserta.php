@@ -49,6 +49,7 @@ date_default_timezone_set("Asia/Jakarta");
                       <div class="btn-group" role="group" aria-label="Basic example">
                         <a href="adm_edit_pendaftar.php?id=<?= $data['dfr_no']; ?>" data-toggle="tooltip" data-placement="bottom" title="Edit" class="btn btn-success">Edit</a>
                         <a href="adm_detail_peserta.php?id=<?= $data['dfr_no']; ?>" data-toggle="tooltip" data-placement="bottom" title="Edit" class="btn btn-primary">Detail</a>
+                        <a href="hapus_peserta.php?id=<?= $data['dfr_no']; ?>" onclick="return confirm('Yakin hapus data ? ');" data-toggle="tooltip" data-placement="bottom" title="Hapus" class="btn btn-danger">Hapus</a>
                       </div>
                   </td>
                 </tr>
